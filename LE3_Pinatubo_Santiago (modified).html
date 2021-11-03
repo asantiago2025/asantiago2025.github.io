@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Lab Exercise 3: News of the World</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- CSS Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div style="background-image: url('https://i.pinimg.com/originals/e3/99/6e/e3996ec1128c5e308fb849f6e4b56bf0.jpg'); 
+        background-size:cover; background-position:center center; background-repeat:no-repeat; height: 100%;">
+        </div>
+
+        <!-- Top Header Start -->
+        <div class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="logo">
+                            <a href="">
+                                <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/249289286_284385286884815_7002622812130384355_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeEE1PadSNBTenpEZFFVlvIeuWrggnKlZqS5auCCcqVmpMEahpbLppRHnh7CztS2q_hAl7FYSHSFnnVX-xM6Mjh4&_nc_ohc=WDBFi6aORmMAX9iT88o&_nc_ht=scontent.fmnl4-4.fna&oh=b74393cf9994b38fb43453cfa069ff26&oe=61A14D05" 
+                                alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="social">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+
+
+        <!-- Header Start -->
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="#" class="nav-item nav-link">Home</a>
+                            <a href="#" class="nav-item nav-link">Nation</a>
+                            <a href="#" class="nav-item nav-link">World</a>
+                            <a href="#" class="nav-item nav-link">Business</a>
+                            <a href="#" class="nav-item nav-link">Entertainment</a>
+                            <a href="#" class="nav-item nav-link">Sports</a>
+                            <a href="#" class="nav-item nav-link">Weather</a>
+                            <a href="#" class="nav-item nav-link">Lifestyle</a>
+                            <a href="#" class="nav-item nav-link">Technology</a>
+                            <a href="#" class="nav-item nav-link">Opinion</a>
+                            <a href="#" class="nav-item nav-link">Features</a>
+                            <a href="#" class="nav-item nav-link">More</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Quick News Start-->
+        <div class="top-news">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 tn-left">
+                        <div class="tn-img">
+                            <img alt src="https://media.npr.org/assets/img/2021/02/18/philippines-vaccine-02_custom-f65884d9f7b33e18f6649cf0510c380130bd76db.jpg"
+                            width="300" height="470"/>
+                            <div class="tn-content">
+                                <div class="tn-content-inner">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i>28-Oct-2021</a>
+                                    <a class="tn-title" href="https://www.cnnphilippines.com/news/2021/10/28/PH-covid-vaccine-supply-100-million.html" target="_blank">PH reaches milestone with 100 million COVID-19 vaccine doses delivered</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 tn-right">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img alt src="https://sa.kapamilya.com/absnews/abscbnnews/media/2021/news/10/27/20211020-vp-leni-robredo-paghilom-ejk-ovp620.jpg"
+                                    width="80" height="220"/>
+                                    <div class="tn-content">
+                                        <div class="tn-content-inner">
+                                            <a class="tn-date" href=""><i class="far fa-clock"></i>29-Oct-2021</a>
+                                            <a class="tn-title" href="https://news.abs-cbn.com/news/10/29/21/robredo-pitches-drug-crackdown-as-intense-as-dutertes-but-with-reforms" target="_blank">Robredo says to fight drugs as intensely as Duterte, but with different approach</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img alt src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iotHGJyD9iE8/v1/-1x-1.jpg" 
+                                    width="80" height="220"/>
+                                    <div class="tn-content">
+                                        <div class="tn-content-inner">
+                                            <a class="tn-date" href=""><i class="far fa-clock"></i>29-Oct-2021</a>
+                                            <a class="tn-title" href="https://news.abs-cbn.com/news/10/29/21/hospitals-eye-break-with-philhealth-over-unpaid-claims" target="_blank">Private hospitals warn cutting ties with PhilHealth over unpaid 2020 COVID claims</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img alt src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvJx0Ij4trV20nEy-7ukGBcJgdniOrvegvjTVQbXVDLdK4WepDMD3OOnf2dYb1MmmXZp8&usqp=CAU" 
+                                    width="80" height="220"/>
+                                    <div class="tn-content">
+                                        <div class="tn-content-inner">
+                                            <a class="tn-date" href=""><i class="far fa-clock"></i>29-Oct-2021</a>
+                                            <a class="tn-title" href="https://news.abs-cbn.com/news/10/29/21/delta-variant-at-endgame-as-covid-cases-fall-group" target="_blank">'No more resurgence': Delta variant reaching endgame as COVID cases fall, says group</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img alt src="https://sa.kapamilya.com/absnews/abscbnnews/media/2021/news/10/27/20211026-duterte-rodrigo-asean-summit-mnib-1.jpg"
+                                    width="80" height="220"/>
+                                    <div class="tn-content">
+                                        <div class="tn-content-inner">
+                                            <a class="tn-date" href=""><i class="far fa-clock"></i>29-Oct-2021</a>
+                                            <a class="tn-title" href="https://www.manilatimes.net/2021/10/29/latest-stories/duterte-to-asean-plus-three-ensure-no-one-is-left-behind-as-we-recover/1820187" target="_blank">Duterte to Asean Plus Three: 'Ensure no one is left behind as we recover'</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quick News End-->
+
+
+        <!-- More News Start-->
+        <div class="cat-news">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2><i class="fas fa-align-justify"></i>Entertainment</h2>
+                        <div class="row cn-slider">
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img alt src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/olivia-rodrigo-attends-the-academy-museum-of-motion-news-photo-1634068606.jpg" 
+                                    width="80" height="220"/>
+                                    <div class="cn-content">
+                                        <div class="cn-content-inner">
+                                            <a class="cn-date" href=""><i class="far fa-clock"></i>29-Oct-2021</a>
+                                            <a class="cn-title" href="https://entertainment.inquirer.net/425449/teen-phenom-olivia-rodrigo-leads-american-music-award-nominations" target="_blank">Olivia Rodrigo leads American Music Award nominations for 2021</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img alt src="https://img.buzzfeed.com/buzzfeed-static/static/2020-04/28/22/tmp/62bed7696d6c/tmp-name-2-115-1588112091-15_dblbig.jpg?output-format=jpg&output-quality=auto" 
+                                    width="80" height="220"/>
+                                    <div class="cn-content">
+                                        <div class="cn-content-inner">
+                                            <a class="cn-date" href=""><i class="far fa-clock"></i>29-Oct-2021</a>
+                                            <a class="cn-title" href="https://www.gmanetwork.com/news/showbiz/showbizabroad/808878/gigi-hadid-and-zayn-malik-split-up-amid-controversy-involving-supermodel-s-mother/story/" target="_blank">Gigi Hadid and Zayn Malik split up amid controversy involving supermodel's mother</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img alt src="https://6.viki.io/image/480221eced934c5380b3aa0a2129de37/dummy.jpeg?s=900x600&e=t" 
+                                    width="80" height="220"/>
+                                    <div class="cn-content">
+                                        <div class="cn-content-inner">
+                                            <a class="cn-date" href=""><i class="far fa-clock"></i>27-Oct-2021</a>
+                                            <a class="cn-title" href="https://www.soompi.com/article/1495404wpp/exos-kai-confirmed-to-be-preparing-for-comeback" target="_blank">EXO’s Kai Confirmed To Be Preparing For Comeback</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2><i class="fas fa-align-justify"></i>Sports</h2>
+                        <div class="row cn-slider">
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img alt src="https://assets2.rappler.com/2021/10/2021-10-24T100337Z_978557055_UP1EHAO0RXZ38_RTRMADP_3_GYMNASTICS-WORLD.jpg" 
+                                    width="80" height="220"/>
+                                    <div class="cn-content">
+                                        <div class="cn-content-inner">
+                                            <a class="cn-date" href=""><i class="far fa-clock"></i>25-Oct-2021</a>
+                                            <a class="cn-title" href="https://www.rappler.com/sports/carlos-yulo-parallel-bars-artistic-gymnastics-world-championship-results-october-24-2021" target="_blank">Carlos Yulo claims vault gold, parallel bars silver at world championships</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img alt src="https://sa.kapamilya.com/absnews/abscbnnews/media/2019/life/11/30/20191130-seagames-opening-20.jpg" 
+                                    width="80" height="220"/>
+                                    <div class="cn-content">
+                                        <div class="cn-content-inner">
+                                            <a class="cn-date" href=""><i class="far fa-clock"></i>29-Oct-2021</a>
+                                            <a class="cn-title" href="https://news.abs-cbn.com/sports/10/29/21/size-of-ph-sea-games-roster-could-be-finalized-january" target="_blank">Number of PH athletes to Vietnam SEA Games could be finalized January, official says</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img alt src="https://sa.kapamilya.com/absnews/abscbnnews/media/2021/reuters/10/29/nba-memphis-grizzlies-at-golden-state.jpg" 
+                                    width="80" height="220"/>
+                                    <div class="cn-content">
+                                        <div class="cn-content-inner">
+                                            <a class="cn-date" href=""><i class="far fa-clock"></i>29-Oct-2021</a>
+                                            <a class="cn-title" href="https://www.straitstimes.com/sport/basketball/nba-grizzlies-take-down-warriors-again-in-ot-in-play-in-rematch-knicks-hold-off#:~:text=(REUTERS)%20%2D%20De'Anthony,NBA%20play%2Din%20tournament%20finale." target="_blank">NBA: Grizzlies take down Warriors again in OT in play-in rematch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- More News End-->
+        
+        <!-- Footer Start -->
+         <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="logo">
+                            <a href="">
+                                <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/249289286_284385286884815_7002622812130384355_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeEE1PadSNBTenpEZFFVlvIeuWrggnKlZqS5auCCcqVmpMEahpbLppRHnh7CztS2q_hAl7FYSHSFnnVX-xM6Mjh4&_nc_ohc=WDBFi6aORmMAX9iT88o&_nc_ht=scontent.fmnl4-4.fna&oh=b74393cf9994b38fb43453cfa069ff26&oe=61A14D05" 
+                                alt="Logo" width="550" height="175">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">.</h3>
+                            <ul>
+                                <li><a href="#">.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+         
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Stay connected</h3>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>Manila, Philippines</p>
+                                <p><i class="fa fa-envelope"></i>pisayprism@gmail.com</p>
+                                <p><i class="fa fa-phone"></i>+128-876-2519</p>
+                                <div class="social">
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Join PISAY Prism</h3>
+                            <div class="newsletter">
+                                <p>
+                                    Dimensions of world news delivered to you.
+                                </p>
+                                <form>
+                                    <input class="form-control" type="email" placeholder="Your email here">
+                                    <button class="btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>&copy; 2021 PISAY Prism. All Rights Reserved.</p>
+                        <a href="#top">Back to Top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
