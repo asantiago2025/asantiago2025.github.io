@@ -1,0 +1,209 @@
+
+/*** general css - about ***/
+
+body {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: #39168E;
+}
+
+#header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 156px;
+}
+
+.header {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 80px;
+    color: ghostwhite;
+    text-shadow: 2px 2px 8px #520088;
+}
+
+#subheader {
+    height: 100px;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    margin-bottom: 30px;
+    text-align:  center;
+    background-color: #f8bbef;
+    text-shadow:purple;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 30px;
+    color: black;
+    background-image: url(https://images.pexels.com/photos/7130498/pexels-photo-7130498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+}
+
+.description {
+    font-size: 22px;
+    font-family: 'Cormorant Upright', serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(112, 0, 122);
+    position: sticky;
+    top: 10px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 14px 16px;
+
+}
+
+li a:hover {
+    background-color: #e459dd;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-position: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}   
+
+video.bgvid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-image: url(https://images.pexels.com/photos/7130498/pexels-photo-7130498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*** about page ***/
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0px;
+    padding-top: -5%;
+    height: 550px;
+}
+
+/*#about {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}*/
+
+
+#about {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-image: url(https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=12600);
+    background-position: center;
+    background-size: cover;
+}
+
+.textabout{
+    width: 160px;
+    height: 70px;
+    margin-top: 100px;
+    padding-bottom: 5px;
+    padding-right: 35px;
+    padding-left: 35px;
+    text-align: justify;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 26px;
+}
+
+
+#references {
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding: 15px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScNAZChDLY4fs6EYY7glpPHygZWW6arno9XQ&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 20px;
+}
+
+img {
+    max-width: 750;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto 
+}
+
+#left {
+    float: left;
+    width: 250px;
+    margin: 20px;
+    padding: 18px;
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1519750783826-e2420f4d687f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+#explore {
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: 'Cormorant Upright', serif;
+    color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
