@@ -112,7 +112,7 @@ video.bgvid {
 }
 
 #footer {
-    margin-top: 180px;
+    margin-top: 140px;
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -161,7 +161,7 @@ video.bgvid {
 #sideR{
     padding: 30px;
     padding-left: 30px;
-    padding-bottom: 160px;
+    padding-bottom: 120px;
     text-align: center;
     text-shadow: 2px 2px 3px #ffafe7;
     font-family: 'Rubik', sans-serif;
