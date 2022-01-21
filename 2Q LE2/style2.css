@@ -5,7 +5,6 @@
     body {
         width: auto;
     }
-
 }
 
 
@@ -90,6 +89,16 @@ li a {
     font-weight:bold;
     font-family: 'Rubik', sans-serif;
     color: white;
+}
+
+@media (max-width: 925px){
+    .li a .ul{
+        padding: 8px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 5px;
+        font-weight:lighter;
+    }
 }
 
 li a:hover {
@@ -339,4 +348,4 @@ footer {
     text-decoration: none;
 }
 
- 
+
