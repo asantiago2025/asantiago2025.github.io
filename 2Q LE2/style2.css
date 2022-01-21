@@ -1,13 +1,23 @@
-
 /*** 2Q Lab Exercise 2: Balitang News ***/
 /*** Hallyu Chronicles ***/
 
-
-@media all and (max-width: 1040px){
+@media (max-width: 1440px){
     body {
         width: auto;
     }
+    article {
+        width: auto;
+        float: none;
+    }
 }
+
+html { font-size:100%; }
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.2rem;} }
+@media (min-width:1100px) { body {font-size:1.5rem;} }
+
+
+
 
 body {
     width: auto;
@@ -16,7 +26,6 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     box-sizing: border-box;
-    overflow:  hidden;
 }
 
 .header {
@@ -28,7 +37,7 @@ body {
     background-image: url(https://images.pexels.com/photos/7130498/pexels-photo-7130498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-position: center;
     background-size: cover;
-   
+
 }
 
 .header h1 {
@@ -41,24 +50,6 @@ body {
     font-weight: normal;
     font-family: 'Rubik', sans-serif;
     text-shadow: 3px 3px 3px hsl(190, 100%, 95%);
-}
-
-@media (max-width: 1028px){
-    .tn-content { 
-        font-size: 8px; 
-    }
-}
-
-@media (max-width: 990px){
-    .header h1 { 
-        font-size: 80px; 
-    }
-    .li a {
-        font-size: 15px;
-    }
-    .top-news  a.tn-date .tn-left a.tn-title {
-        font-size: 8px;
-    }
 }
 
 nav {
@@ -184,21 +175,16 @@ footer {
     width: 100%;
     color: #ffffff;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 400px;
     transition: .3s;
 }
 
 .top-news .tn-left .tn-content a.tn-title {
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 700px;
 }
 
 .top-news .tn-content a.tn-title:hover {
     color: #f3b8ff;
     text-decoration: none;
 }
-
-
-
-
-
