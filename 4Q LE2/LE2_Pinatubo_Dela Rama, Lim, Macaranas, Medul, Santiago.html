@@ -1,0 +1,1185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts | Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/99ee60e21f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js" crossorigin="anonymous"></script>
+
+    <title>My Little Phony | Home</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+        html,
+        body {
+            background-image: url(https://wallpaperaccess.com/full/5926624.jpg?fbclid=IwAR1uSA7231dxkL1DQ81KlmMrbLX6KBaWdoOtWRG1uAMDHv-7qEqLOaHABZw);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container-fluid {
+            width: 100%;
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            color: white;
+            margin-top: 3px;
+        }
+
+        #title {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            background-color: #3A1E55;
+        }
+
+        #logo {
+            width: 80px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: inline;
+        }
+
+        #ponies {
+            height: 60px;
+            float: right;
+            margin-top: 12px;
+        }
+
+        #webname {
+            display: inline;
+            height: 42px;
+            margin-left: 10px;
+        }
+
+        .searchFriend {
+            height: 38px;
+            width: 20%;
+            border: 2px solid #3A1E55;
+            vertical-align: top;
+            float: right;
+            border-radius: 0px 8px 8px 0px;
+            background-color: #3A1E55;
+            text-align: center;
+            transition: 0.4s;
+            display: none;
+        }
+
+        #contacts {
+            width: 36%;
+            float: left;
+            display: inline;
+        }
+
+        .title2 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 24pt;
+            color: #3A1E55;
+            text-shadow: 2px 2px 3px hsl(311, 100%, 98%);
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        #section2 {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+
+        .searchFriend1 {
+            height: 38px;
+            width: 20%;
+            border: 2px solid #3A1E55;
+            vertical-align: top;
+            float: right;
+            border-radius: 0px 8px 8px 0px;
+            background-color: #3A1E55;
+            text-align: center;
+            transition: 0.4s;
+            color: white;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 20px;
+        }
+
+        .searchFriend1:hover {
+            border: 2px solid #DE0B80;
+            background-color: #DE0B80;
+            box-shadow: 0 0 5px #DE0B80;
+        }
+
+        .findFriend {
+            display: inline;
+            width: 80%;
+            padding-left: 8px;
+            font-family: 'Patrick Hand', cursive;
+            position: relative;
+            height: 38px;
+            font-size: 20px;
+            color: #3A1E55;
+            border-color: #3A1E55;
+            border-radius: 8px 0px 0px 8px;
+            transition: 0.4s;
+        }
+
+        .findFriend:focus {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .findFriend:hover {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        #details {
+            width: 60%;
+            float: right;
+        }
+
+        .name {
+            display: inline-block;
+            height: 38px;
+            width: 15%;
+            border: 2px solid #3A1E55;
+            border-radius: 8px 0px 0px 8px;
+            background-color: #3A1E55;
+            text-align: center;
+            transition: 0.4s;
+            color: white;
+            font-family: 'Patrick Hand', cursive;
+            vertical-align: middle;
+            font-size: 20px;
+        }
+
+        .inputName {
+            width: 85%;
+            font-family: 'Patrick Hand', cursive;
+            position: relative;
+            height: 38px;
+            font-size: 20px;
+            color: #3A1E55;
+            border-color: #3A1E55;
+            border-radius: 0px 8px 8px 0px;
+            transition: 0.4s;
+            float: right;
+            padding-left: 5px;
+        }
+
+        .inputName:hover {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .inputName:focus {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .list-group-item {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 22px;
+            color: #63279a;
+            text-shadow: 2px 2px 3px hsl(311, 100%, 98%);
+            margin-bottom: -17px;
+            transition: 0.3s;
+            border: 0;
+            margin-left: -20px;
+            list-style-type: none;
+            background: none;
+        }
+
+        #ulPonyList {
+            margin: 0px;
+            padding-left: 2px;
+            padding-top: 4px;
+            padding-bottom: 2px;
+        }
+
+        .list-group-item a {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 21px;
+            padding-top: 20px;
+            color: #3A1E55;
+            text-shadow: 2px 2px 3px hsl(311, 100%, 98%);
+            margin-bottom: -18px;
+            transition: 0.3s;
+            border: 0;
+        }
+
+        .list-group-item2 {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 20px;
+            color: #3A1E55;
+            transition: 0.3s;
+            border: 0;
+            margin-left: 2px;
+            list-style-type: none;
+        }
+
+        .list-group-item a:hover {
+            font-size: 24px;
+            color: #DE0B80;
+            text-decoration: none;
+        }
+
+        .email {
+            float: left;
+            height: 38px;
+            width: 15%;
+            border: 2px solid #3A1E55;
+            vertical-align: top;
+            border-radius: 8px 0px 0px 8px;
+            background-color: #3A1E55;
+            text-align: center;
+            transition: 0.4s;
+            color: white;
+            font-family: 'Patrick Hand', cursive;
+            vertical-align: middle;
+            font-size: 18px;
+        }
+
+        .inputEmail {
+            width: 33%;
+            font-family: 'Patrick Hand', cursive;
+            position: relative;
+            font-size: 18px;
+            height: 38px;
+            color: #3A1E55;
+            border-color: #3A1E55;
+            border-radius: 0px 8px 8px 0px;
+            transition: 0.4s;
+            float: left;
+            padding-left: 5px;
+        }
+
+        .inputEmail:hover {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .inputEmail:focus {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .phone {
+            height: 38px;
+            width: 15%;
+            border: 2px solid #3A1E55;
+            vertical-align: top;
+            border-radius: 8px 0px 0px 8px;
+            background-color: #3A1E55;
+            text-align: center;
+            transition: 0.4s;
+            color: white;
+            font-family: 'Patrick Hand', cursive;
+            vertical-align: middle;
+            font-size: 20px;
+            float: left;
+            margin-left: 4%;
+        }
+
+        .inputPhone {
+            width: 33%;
+            font-family: 'Patrick Hand', cursive;
+            position: relative;
+            font-size: 20px;
+            height: 38px;
+            color: #3A1E55;
+            border-color: #3A1E55;
+            border-radius: 0px 8px 8px 0px;
+            transition: 0.4s;
+            display: inline-block;
+            padding-left: 5px;
+        }
+
+        .inputPhone:hover {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .inputPhone:focus {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .inputAddress {
+            width: 85%;
+            height: 76px;
+            font-family: 'Patrick Hand', cursive;
+            position: relative;
+            font-size: 20px;
+            color: #3A1E55;
+            border: 2px solid #3A1E55;
+            background-color: white;
+            border-color: #3A1E55;
+            border-radius: 0px 8px 8px 0px;
+            transition: 0.4s;
+            float: right;
+            vertical-align: top;
+            resize: none;
+            padding-left: 5px;
+        }
+
+        .address {
+            height: 76px;
+            width: 15%;
+            border: 2px solid #3A1E55;
+            vertical-align: middle;
+            border-radius: 8px 0px 0px 8px;
+            background-color: #3A1E55;
+            text-align: center;
+            transition: 0.4s;
+            color: white;
+            font-family: 'Patrick Hand', cursive;
+            vertical-align: middle;
+            font-size: 20px;
+            padding-top: 22px;
+            float: right;
+        }
+
+        .inputAddress:hover {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .inputAddress:focus {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .cancel {
+            background-color: #3A1E55;
+            color: white;
+            height: 38px;
+            border-radius: 8px 8px 8px 8px;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 20px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-top: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            transition: 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .cancel:hover {
+            border: 2px solid #DE0B80;
+            background-color: #DE0B80;
+            box-shadow: 0 0 5px #DE0B80;
+        }
+
+        .cancel:active {
+            border: 2px solid #DE0B80;
+            background-color: #DE0B80;
+            box-shadow: 0 0 5px #DE0B80;
+            transform: translateY(2px);
+        }
+
+        .save:hover {
+            border: 2px solid #DE0B80;
+            background-color: #DE0B80;
+            box-shadow: 0 0 5px #DE0B80;
+        }
+
+        .save:active {
+            border: 2px solid #DE0B80;
+            background-color: #DE0B80;
+            box-shadow: 0 0 5px #DE0B80;
+            transform: translateY(2px);
+        }
+
+        .save {
+            background-color: #3A1E55;
+            color: white;
+            height: 38px;
+            border-radius: 8px 8px 8px 8px;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 20px;
+            display: inline-block;
+            padding-left: 5%;
+            padding-right: 5%;
+            transition: 0.3s;
+            text-align: center;
+            margin-left: 12px;
+        }
+
+        .name1 {
+            display: none;
+            height: 38px;
+            width: 15%;
+            border: 2px solid #3A1E55;
+            border-radius: 8px 0px 0px 8px;
+            background-color: #3A1E55;
+            text-align: center;
+            transition: 0.4s;
+            color: white;
+            font-family: 'Patrick Hand', cursive;
+            vertical-align: middle;
+        }
+
+        .inputName1 {
+            width: 85%;
+            font-family: 'Patrick Hand', cursive;
+            position: relative;
+            height: 38px;
+            font-size: 17px;
+            color: #3A1E55;
+            border: 2px solid #3A1E55;
+            border-radius: 0px 8px 8px 0px;
+            transition: 0.4s;
+            display: none;
+            float: right;
+            padding-left: 5px;
+        }
+
+        .inputName1:hover {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .inputName1:focus {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .email1 {
+            float: left;
+            height: 38px;
+            width: 15%;
+            border: 2px solid #3A1E55;
+            vertical-align: top;
+            border-radius: 8px 0px 0px 8px;
+            background-color: #3A1E55;
+            text-align: center;
+            transition: 0.4s;
+            color: white;
+            font-family: 'Patrick Hand', cursive;
+            vertical-align: middle;
+            display: none;
+        }
+
+        .inputEmail1 {
+            width: 85%;
+            font-family: 'Patrick Hand', cursive;
+            position: relative;
+            font-size: 17px;
+            height: 38px;
+            color: #3A1E55;
+            border: 2px solid #3A1E55;
+            border-radius: 0px 8px 8px 0px;
+            transition: 0.4s;
+            float: left;
+            padding-left: 5px;
+            display: none;
+            margin-bottom: 16px;
+        }
+
+        .inputEmail1:hover {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .inputEmail1:focus {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .phone1 {
+            height: 38px;
+            width: 15%;
+            border: 2px solid #3A1E55;
+            vertical-align: top;
+            border-radius: 8px 0px 0px 8px;
+            background-color: #3A1E55;
+            text-align: center;
+            transition: 0.4s;
+            color: white;
+            font-family: 'Patrick Hand', cursive;
+            vertical-align: middle;
+            display: none;
+            float: right;
+        }
+
+        .inputPhone1 {
+            width: 85%;
+            font-family: 'Patrick Hand', cursive;
+            position: relative;
+            font-size: 17px;
+            height: 38px;
+            color: #3A1E55;
+            border: 2px solid #3A1E55;
+            border-radius: 0px 8px 8px 0px;
+            transition: 0.4s;
+            display: none;
+            padding-left: 5px;
+            float: right;
+        }
+
+        .inputPhone1:hover {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .inputPhone1:focus {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .inputAddress1 {
+            width: 85%;
+            height: 76px;
+            font-family: 'Patrick Hand', cursive;
+            position: relative;
+            font-size: 17px;
+            color: #3A1E55;
+            border: 2px solid #3A1E55;
+            background-color: white;
+            border-color: #3A1E55;
+            border-radius: 0px 8px 8px 0px;
+            transition: 0.4s;
+            display: none;
+            float: right;
+            vertical-align: middle;
+            resize: none;
+            padding-left: 5px;
+        }
+
+        .address1 {
+            height: 76px;
+            width: 15%;
+            border: 2px solid #3A1E55;
+            vertical-align: middle;
+            border-radius: 8px 0px 0px 8px;
+            background-color: #3A1E55;
+            text-align: center;
+            transition: 0.4s;
+            color: white;
+            font-family: 'Patrick Hand', cursive;
+            vertical-align: middle;
+            padding-top: 22px;
+            display: none;
+            float: right;
+        }
+
+        .inputAddress1:hover {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        .inputAddress1:focus {
+            box-shadow: 0 0 5px #DE0B80;
+            border: 2px solid #DE0B80;
+            outline: none;
+        }
+
+        #cancel1 {
+            display: none;
+        }
+
+        #checkbutton1 {
+            display: none;
+        }
+
+        #addRedirect1 {
+            display: none;
+        }
+
+        .button {
+            display: flex;
+            height: 45px;
+            width: 165px;
+            margin-top: 2%;
+            padding: 0;
+            background-color: #3A1E55;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            overflow: hidden;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 20px;
+            cursor: pointer;
+            align-items: center;
+            vertical-align: middle;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            border: 2px solid #DE0B80;
+            background-color: #DE0B80;
+            box-shadow: 0 0 5px #DE0B80;
+            transform: translateY(2px);
+        }
+
+        .button:active {
+            border: 2px solid #DE0B80;
+            background-color: #DE0B80;
+            box-shadow: 0 0 5px #DE0B80;
+            transform: translateY(2px);
+        }
+
+        .button__text {
+            display: inline-flex;
+            align-items: center;
+            padding-right: 10px;
+            padding-left: 10px;
+            color: #fff;
+            height: 100%;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .button__icon {
+            display: inline-flex;
+            align-items: center;
+            vertical-align: middle;
+            padding-right: 10px;
+            color: #fff;
+            height: 100%;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+
+        /*Media Queries*/
+
+        @media all and (max-width: 1020px) {
+            .searchFriend {
+                display: block;
+            }
+
+            .searchFriend1 {
+                display: none;
+            }
+        }
+
+        @media all and (max-width: 890px) {
+            .name {
+                display: none;
+            }
+
+            .name1 {
+                display: inline-block;
+            }
+
+            .inputName {
+                display: none;
+            }
+
+            .inputName1 {
+                display: inline-block;
+            }
+
+            .email {
+                display: none;
+            }
+
+            .email1 {
+                display: inline-block;
+            }
+
+            .inputEmail {
+                display: none;
+            }
+
+            .inputEmail1 {
+                display: inline-block;
+            }
+
+            .phone {
+                display: none;
+            }
+
+            .phone1 {
+                display: inline-block;
+            }
+
+            .inputPhone {
+                display: none;
+            }
+
+            .inputPhone1 {
+                display: inline-block;
+            }
+
+            .address {
+                display: none;
+            }
+
+            .address1 {
+                display: inline-block;
+            }
+
+            .inputAddress {
+                display: none;
+            }
+
+            .inputAddress1 {
+                display: inline-block;
+            }
+
+            #cancel {
+                display: none;
+            }
+
+            #cancel1 {
+                display: inline-block;
+            }
+
+            #checkbutton {
+                display: none;
+            }
+
+            #checkbutton1 {
+                display: inline-block;
+            }
+
+            #addRedirect {
+                display: none;
+            }
+
+            #addRedirect1 {
+                display: inline;
+            }
+
+            #button {
+                display: inline-block;
+            }
+
+        }
+
+        @media all and (max-width: 730px) {
+            #ponies {
+                display: none;
+            }
+
+            .button__text {
+                font-size: 18px;
+            }
+
+            .button__icon {
+                height: 90%;
+                font-size: 1.5em;
+            }
+        }
+
+        @media all and (max-width: 650px) {
+            #ponies {
+                display: none;
+            }
+
+            .button__text {
+                font-size: 17px;
+            }
+        }
+
+        @media all and (max-width: 520px) {
+            #contacts {
+                width: 100%;
+                float: none;
+                display: block;
+            }
+
+            #details {
+                width: 100%;
+                float: none;
+                display: block;
+            }
+
+            .button__text {
+                font-size: 20px;
+            }
+
+        }
+
+        @media all and (max-width: 505px) {
+            #logo {
+                width: 60px;
+            }
+        }
+
+        @media all and (max-width: 470px) {
+            #webname {
+                height: 35px;
+            }
+        }
+
+        @media all and (max-width: 415px) {
+            #webname {
+                height: 28px;
+            }
+        }
+
+        @media all and (max-width: 300px) {
+            #logo {
+                display: none;
+            }
+
+            #webname {
+                margin-top: 12px;
+                height: 24px;
+                margin-left: 0;
+            }
+        }
+    </style>
+
+    <script>
+        var ponyName = [
+            "Apple Bloom",
+            "Applejack",
+            "Fluttershy",
+            "Izzy Moonbow",
+            "Pinkie Pie",
+        ];
+
+        var ponyPhone = [
+            "63589775",
+            "92503390",
+            "82047295",
+            "19459385",
+            "50275048",
+        ];
+
+        var ponyEmail = [
+            "applebloom@mylittlepony.com",
+            "applejack@mylittlepony.com",
+            "fluttershy@mylittlepony.com",
+            "izzymoonbow@mylittlepony.com",
+            "pinkiepie@mylittlepony.com",
+        ];
+
+        var ponyAddress = [
+            "Sweet Apple Acres",
+            "Sweet Apple Acres",
+            "Outside of Ponyville, in a cottage near the Everfree Forest",
+            "Maretime Bay",
+            "Sugarcube Corner, Ponyville",
+        ];
+        var x = 0;
+
+        function checkDetails() {
+            if (document.getElementById('enterName').value === "" || document.getElementById('enterEmail').value === "" || document.getElementById('enterPhone').value === "" || document.getElementById('enterAddress').value === "") {
+                alert("Your details are incomplete.");
+                document.getElementById('enterName').value = "";
+                document.getElementById('enterEmail').value = "";
+                document.getElementById('enterPhone').value = "";
+                document.getElementById('enterAddress').value = "";
+            }
+            else if (ponyName.indexOf(document.getElementById('enterName').value) !== -1) {
+                alert("Your details are already here.");
+                document.getElementById('enterName').value = "";
+                document.getElementById('enterEmail').value = "";
+                document.getElementById('enterPhone').value = "";
+                document.getElementById('enterAddress').value = "";
+            }
+            else {
+                var enterName = document.getElementById('enterName').value;
+                writeListName();
+                document.getElementById('enterName').value = "";
+                ponyName.push(enterName);
+
+                var enterEmail = document.getElementById('enterEmail').value;
+                writeListName();
+                document.getElementById('enterEmail').value = "";
+                ponyEmail.push(enterEmail);
+
+                var enterPhone = document.getElementById('enterPhone').value;
+                writeListName();
+                document.getElementById('enterPhone').value = "";
+                ponyPhone.push(enterPhone);
+
+                var enterAddress = document.getElementById('enterAddress').value;
+                writeListName();
+                document.getElementById('enterAddress').value = "";
+                ponyAddress.push(enterAddress);
+            }
+        }
+
+        function checkDetails1() {
+            if (document.getElementById('enterName1').value === "" || document.getElementById('enterEmail1').value === "" || document.getElementById('enterPhone1').value === "" || document.getElementById('enterAddress1').value === "") {
+                alert("Your details are incomplete.");
+                document.getElementById('enterName1').value = "";
+                document.getElementById('enterEmail1').value = "";
+                document.getElementById('enterPhone1').value = "";
+                document.getElementById('enterAddress1').value = "";
+            }
+            else if (ponyName.indexOf(document.getElementById('enterName1').value) !== -1) {
+                alert("Your details are already here.");
+                document.getElementById('enterName1').value = "";
+                document.getElementById('enterEmail1').value = "";
+                document.getElementById('enterPhone1').value = "";
+                document.getElementById('enterAddress1').value = "";
+            }
+            else {
+                var enterName = document.getElementById('enterName1').value;
+                writeListName();
+                document.getElementById('enterName1').value = "";
+                ponyName.push(enterName);
+
+                var enterEmail = document.getElementById('enterEmail1').value;
+                writeListName();
+                document.getElementById('enterEmail1').value = "";
+                ponyEmail.push(enterEmail);
+
+                var enterPhone = document.getElementById('enterPhone1').value;
+                writeListName();
+                document.getElementById('enterPhone1').value = "";
+                ponyPhone.push(enterPhone);
+
+                var enterAddress = document.getElementById('enterAddress1').value;
+                writeListName();
+                document.getElementById('enterAddress1').value = "";
+                ponyAddress.push(enterAddress);
+            }
+        }
+
+
+        function clearX() {
+            document.getElementById('enterName').value = "";
+            document.getElementById('enterEmail').value = "";
+            document.getElementById('enterPhone').value = "";
+            document.getElementById('enterAddress').value = "";
+
+            document.getElementById('enterName1').value = "";
+            document.getElementById('enterEmail1').value = "";
+            document.getElementById('enterPhone1').value = "";
+            document.getElementById('enterAddress1').value = "";
+
+            document.getElementById('enterName').readOnly = false;
+            document.getElementById('enterEmail').readOnly = false;
+            document.getElementById('enterPhone').readOnly = false;
+            document.getElementById('enterAddress').readOnly = false;
+            document.getElementById('cancel').disabled = false;
+            document.getElementById('checkbutton').disabled = false;
+        }
+
+        function clearX1() {
+            document.getElementById('enterName1').value = "";
+            document.getElementById('enterEmail1').value = "";
+            document.getElementById('enterPhone1').value = "";
+            document.getElementById('enterAddress1').value = "";
+
+            document.getElementById('enterName').value = "";
+            document.getElementById('enterEmail').value = "";
+            document.getElementById('enterPhone').value = "";
+            document.getElementById('enterAddress').value = "";
+
+            document.getElementById('enterName1').readOnly = false;
+            document.getElementById('enterEmail1').readOnly = false;
+            document.getElementById('enterPhone1').readOnly = false;
+            document.getElementById('enterAddress1').readOnly = false;
+            document.getElementById('cancel1').disabled = false;
+            document.getElementById('checkbutton1').disabled = false;
+        }
+
+        function showDetails(x) {
+            for (var i = 0; i < ponyName.length; i++) {
+                if (ponyPhone[i] == x) {
+                    document.getElementById('enterName').value = ponyName[i];
+                    document.getElementById('enterEmail').value = ponyEmail[i];
+                    document.getElementById('enterPhone').value = ponyPhone[i];
+                    document.getElementById('enterAddress').value = ponyAddress[i];
+
+                    document.getElementById('enterName1').value = ponyName[i];
+                    document.getElementById('enterEmail1').value = ponyEmail[i];
+                    document.getElementById('enterPhone1').value = ponyPhone[i];
+                    document.getElementById('enterAddress1').value = ponyAddress[i];
+
+                    document.getElementById('enterName').readOnly = true;
+                    document.getElementById('enterEmail').readOnly = true;
+                    document.getElementById('enterPhone').readOnly = true;
+                    document.getElementById('enterAddress').readOnly = true;
+                    document.getElementById('cancel').disabled = true;
+                    document.getElementById('checkbutton').disabled = true;
+
+                    document.getElementById('enterName1').readOnly = true;
+                    document.getElementById('enterEmail1').readOnly = true;
+                    document.getElementById('enterPhone1').readOnly = true;
+                    document.getElementById('enterAddress1').readOnly = true;
+                    document.getElementById('cancel1').disabled = true;
+                    document.getElementById('checkbutton1').disabled = true;
+                }
+            }
+        }
+
+        function writeListName() {
+            document.getElementById('ulPonyList').innerHTML = "";
+            for (var i = 0; i < ponyName.length; i++) {
+                document.getElementById('ulPonyList').innerHTML += '<li class="list-group-item"><a href="#" onclick="showDetails(' + ponyPhone[i] + ')">' + ponyName[i] + '</a></li>';
+                x++;
+            }
+        }
+
+        function cancel() {
+            document.getElementById("enterName").value = "";
+            document.getElementById("enterEmail").value = "";
+            document.getElementById("enterPhone").value = "";
+            document.getElementById("enterAddress").value = "";
+        }
+
+        function cancel1() {
+            document.getElementById("enterName1").value = "";
+            document.getElementById("enterEmail1").value = "";
+            document.getElementById("enterPhone1").value = "";
+            document.getElementById("enterAddress1").value = "";
+        }
+    </script>
+</head>
+
+<body style="height: 100%;">
+    <header>
+        <div id="title">
+            <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t1.15752-9/279573387_1131883180709738_6208773966024176525_n.png?_nc_cat=103&ccb=1-6&_nc_sid=ae9488&_nc_eui2=AeGojwcME60IE9TYwKUb6rdPWTAI5C_q0ORZMAjkL-rQ5CGwsOhoIKArFBDfZEClQWX0L88qwpX_qQlUS1WiBlU9&_nc_ohc=SqUaOjLb3egAX8NNBx-&_nc_ht=scontent.fcrk1-4.fna&oh=03_AVL3JsvcE1tYH6vF3KTdVFLWSrMPz8RhoUoNllgCB_12SQ&oe=629CE4AD"
+                alt="logo" id="logo">
+            <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.15752-9/279932360_278784664464636_8231736746437435566_n.png?_nc_cat=109&ccb=1-6&_nc_sid=ae9488&_nc_eui2=AeEbEIuhbfRN_mFybSpLbwSUgLDfVXA1uaSAsN9VcDW5pIe9xytSaN6wxES0enZ0yCTtpZOVsBSjAgeNd1vGIS-a&_nc_ohc=D6Rpa_1aim0AX9UWfhw&_nc_ht=scontent.fcrk1-1.fna&oh=03_AVI07FU3kUqJxinaulV1nfHKSyPSHyMudDDEOTJ5bCqtcw&oe=629E6268"
+                alt="Title" id="webname">
+            <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.15752-9/278968474_1058900721383781_4139957284632761442_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=ae9488&_nc_eui2=AeFxeqHJfl0EX2GTExlEm6_vVL78z5zoCLZUvvzPnOgItnavYYTkA5yGqsJN4qx3faKcu8kuIE4ONoEdt_ITFUkK&_nc_ohc=u1qkIrcsNCAAX9FD8qn&tn=0Yzn2xiSoUkPs2gK&_nc_ht=scontent.fcrk1-1.fna&oh=03_AVIhuOp5dOTklsmoij6-ebKatapVieM0BoaEYtKyyXEsFQ&oe=629DB1F0"
+                alt="My Little Ponies" id="ponies">
+        </div>
+    </header>
+
+    <div class="container-fluid" id="section2">
+        <div id="contacts">
+            <p class="title2">CONTACTS</p>
+
+            <div>
+                <input placeholder="Find a friend!" class="findFriend" onclick="searchFriend()">
+                <button class="searchFriend1">Search</button>
+                <button class="searchFriend"><span class="material-icons" style="color: white;">search</span></button>
+            </div>
+
+            <ul class="list-group-item" id="ulPonyList">
+                <li class="list-group-item"><a href="#" onclick="showDetails(63589775)">Apple Bloom</a></li>
+                <li class="list-group-item"><a href="#" onclick="showDetails(92503390)">Applejack</a></li>
+                <li class="list-group-item"><a href="#" onclick="showDetails(82047295)">Fluttershy</a></li>
+                <li class="list-group-item"><a href="#" onclick="showDetails(19459385)">Izzy Moonbow</a></li>
+                <li class="list-group-item"><a href="#" onclick="showDetails(50275048)">Pinkie Pie</a></li>
+            </ul>
+
+            <div>
+                <a class="button btn" href="#enterName" onclick="clearX()">
+                    <span class="button__text">Add New Friend</span>
+                    <span class="button__icon">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                    </span>
+                </a>
+            </div>
+
+            <!-- <div>
+                <button type="button" class="button">
+                    <a href="#enterName" onclick="clearX()">
+                        <span class="button__text">Add New Friend</span>
+                        <span class="button__icon">
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </span>
+                    </a>
+                </button>
+            </div> -->
+
+<!--        <ul class="list-group-item" id="ulPonyAdd">
+                <li class="list-group-item2"><a href="#enterName" onclick="clearX()">
+                        <button type="button" class="button">
+                            <span class="button__text">Add New Friend</span>
+                            <span class="button__icon"><ion-icon name="add-circle-outline"></ion-icon></span>
+                        </button>
+                    </a>
+                </li>
+            </ul>  -->
+
+        </div>
+
+        <div id="details">
+            <p class="title2" id="detailsTitle1">DETAILS</p>
+
+            <div class="DetailsSub">
+                <p class="name">Name</p>
+                <input class="inputName" id="enterName" type="text">
+                <p class="name1"><span class="material-icons">account_circle</span></p>
+                <input class="inputName1" placeholder="Name" id="enterName1">
+
+                <p class="email">E-Mail</p>
+                <input class="inputEmail" id="enterEmail" type="email">
+                <p class="email1"><span class="material-icons">email</span></p>
+                <input class="inputEmail1" type="email" placeholder="E-Mail" id="enterEmail1">
+
+                <input class="inputPhone" id="enterPhone" type="number">
+                <p class="phone">Phone #</p>
+                <input class="inputPhone1" type="tel" placeholder="Phone Number" id="enterPhone1">
+                <p class="phone1"><span class="material-icons">phone</span></p>
+
+                <input class="inputAddress" id="enterAddress" type="text">
+                <p class="address">Address</p>
+                <textarea class="inputAddress1" placeholder="Address" id="enterAddress1"></textarea>
+                <p class="address1"><span class="material-icons">place</span></p>
+            </div>
+
+            <div style="text-align: center;">
+                <button class="cancel" type="submit" id="cancel" onclick="cancel()">Cancel</button>
+                <button class="save" type="submit" id="checkbutton" onclick="checkDetails()">Save</button>
+
+                <button class="cancel" type="submit" id="cancel1" onclick="cancel1()">Cancel</button>
+                <button class="save" type="submit" id="checkbutton1" onclick="checkDetails1()">Save</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
